@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DummyLib.Wrapper", "DummyLib.Wrapper\DummyLib.Wrapper.csproj", "{BA368651-DDBC-4F54-AFD5-B782DC9B0A9B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleBlittableType", "Example1\ExampleBlittableType.csproj", "{44C26AE0-CCC6-4755-A0DD-6234A33B0DBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleBlittableType", "ExampleBlittableType\ExampleBlittableType.csproj", "{44C26AE0-CCC6-4755-A0DD-6234A33B0DBF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleNonBlittableType", "ExampleNonBlittableType\ExampleNonBlittableType.csproj", "{90F2CA70-953A-46C8-ACD9-5C1544348DAC}"
 EndProject
