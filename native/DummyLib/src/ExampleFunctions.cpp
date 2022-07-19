@@ -1,5 +1,6 @@
 ﻿#include "ExampleFunctions.h"
 
+#include <codecvt>
 #include <iostream>
 
 #ifdef __cplusplus
@@ -31,9 +32,23 @@ bool IsNegative(int number)
     return false;
 }
 
+std::string utf16WStrToUtf8Str(const std::wstring& wStr)
+{
+    using convert_type = std::codecvt_utf8_utf16<wchar_t>;
+    std::wstring_convert<convert_type, wchar_t> converter;
+    return converter.to_bytes(wStr);
+}
+
 void PrintMessage(char* msg)
 {
     std::string msgStr(msg);
+    std::cout << msgStr << std::endl;
+}
+
+void PrintMessageW(wchar_t* msg)
+{
+    std::wstring msgWStr(msg);
+    std::string msgStr = utf16WStrToUtf8Str(msgWStr);
     std::cout << msgStr << std::endl;
 }
 

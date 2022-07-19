@@ -1,15 +1,14 @@
 ﻿using System;
 using DummyLib.Wrapper;
 
-namespace Example1
+namespace ExampleBlittableType
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var value = 1 / DummyLibPINVOKE.Q_rsqrt(144);
-
-            Console.WriteLine($"inverse inverse sqrt(144): {value}");
+            var result = 1 / DummyLibPINVOKE.Q_rsqrt(144);
+            Console.WriteLine($"1 / Q_rsqrt(144) = {result}");
         }
     }
 }

@@ -11,6 +11,8 @@ extern "C" {
 
     __declspec(dllexport) void PrintMessage(char* msg);
 
+    __declspec(dllexport) void PrintMessageW(wchar_t* msg);
+
 #ifdef __cplusplus
 }
 #endif
