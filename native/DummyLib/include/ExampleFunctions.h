@@ -9,7 +9,7 @@ extern "C" {
 
     __declspec(dllexport) bool IsNegative(int number);
 
-    __declspec(dllexport) bool ReturnFalse();
+    __declspec(dllexport) void PrintMessage(char* msg);
 
 #ifdef __cplusplus
 }

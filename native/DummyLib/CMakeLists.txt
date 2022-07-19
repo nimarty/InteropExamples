@@ -6,18 +6,12 @@ set(LIBRARY_NAME "DummyLib")
 
 set(SRC
     "src/ExampleFunctions.cpp"
+    "include/ExampleFunctions.h"
  )
 
-# library public interface
-set(INC
-    "include/ExampleFunctions.h"
-)
-
-# the library is build as shared library
-add_library(${LIBRARY_NAME} SHARED ${SRC} ${HEADERS} ${INC})
+add_library(${LIBRARY_NAME} SHARED ${SRC})
 
 target_include_directories(${LIBRARY_NAME} PUBLIC "include")
-message(${CMAKE_CURRENT_LIST_DIR}/../../managed/DummyLib.Wrapper/native/)
 
 add_custom_command(
     TARGET ${LIBRARY_NAME}

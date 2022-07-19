@@ -8,7 +8,7 @@ namespace ExampleNonBlittableType
         static void Main(string[] args)
         {
             Console.WriteLine($"is -123 negative: {DummyLibPINVOKE.IsNegative(-123)}");
-            Console.WriteLine($"is 5 negative: {DummyLibPINVOKE.IsNegative(5)}");
+            Console.WriteLine($"is 5 negative:    {DummyLibPINVOKE.IsNegative(5)}");
         }
     }
 }

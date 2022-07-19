@@ -1,4 +1,6 @@
-#include "ExampleFunctions.h"
+﻿#include "ExampleFunctions.h"
+
+#include <iostream>
 
 #ifdef __cplusplus
 extern "C" {
@@ -27,6 +29,12 @@ bool IsNegative(int number)
         return true;
     }
     return false;
+}
+
+void PrintMessage(char* msg)
+{
+    std::string msgStr(msg);
+    std::cout << msgStr << std::endl;
 }
 
 #ifdef __cplusplus

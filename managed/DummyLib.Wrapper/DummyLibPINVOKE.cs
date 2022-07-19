@@ -9,12 +9,14 @@ namespace DummyLib.Wrapper
         [DllImport("native/DummyLib.dll")]
         public static extern float Q_rsqrt(float number);
 
-        //Non blittable Type
+        //Non blittable types
         [DllImport("native/DummyLib.dll")]
         //[Return: MarshalAs(UnmanagedType.I1)]
         public static extern bool IsNegative(int number);
 
-        //strings with unicode problematics
+        [DllImport("native/DummyLib.dll")]
+        public static extern void PrintMessage( /*[MarshalAs(UnmanagedType.LPUTF8Str)]*/ string msg);
+
 
         // structs?
 
