@@ -22,7 +22,7 @@ message(${CMAKE_CURRENT_LIST_DIR}/../../managed/DummyLib.Wrapper/native/)
 add_custom_command(
     TARGET ${LIBRARY_NAME}
     POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_BINARY_DIR}/DummyLib.dll ${CMAKE_CURRENT_LIST_DIR}/../../managed/DummyLib.Wrapper/native/
-    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_BINARY_DIR}/DummyLib.pdb ${CMAKE_CURRENT_LIST_DIR}/../../managed/DummyLib.Wrapper/native/
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different ${CMAKE_CURRENT_BINARY_DIR}/DummyLib.dll ${CMAKE_CURRENT_LIST_DIR}/../../managed/DummyLib.Wrapper/native/
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different ${CMAKE_CURRENT_BINARY_DIR}/DummyLib.pdb ${CMAKE_CURRENT_LIST_DIR}/../../managed/DummyLib.Wrapper/native/
     COMMENT "copy artifacts"
 )
