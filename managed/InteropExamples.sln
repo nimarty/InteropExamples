@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyLib.Wrapper", "DummyLib.Wrapper\DummyLib.Wrapper.csproj", "{BA368651-DDBC-4F54-AFD5-B782DC9B0A9B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DummyLib.Wrapper", "DummyLib.Wrapper\DummyLib.Wrapper.csproj", "{BA368651-DDBC-4F54-AFD5-B782DC9B0A9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1", "Example1\Example1.csproj", "{44C26AE0-CCC6-4755-A0DD-6234A33B0DBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleBlittableType", "Example1\ExampleBlittableType.csproj", "{44C26AE0-CCC6-4755-A0DD-6234A33B0DBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleNonBlittableType", "ExampleNonBlittableType\ExampleNonBlittableType.csproj", "{90F2CA70-953A-46C8-ACD9-5C1544348DAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{44C26AE0-CCC6-4755-A0DD-6234A33B0DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44C26AE0-CCC6-4755-A0DD-6234A33B0DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44C26AE0-CCC6-4755-A0DD-6234A33B0DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F2CA70-953A-46C8-ACD9-5C1544348DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F2CA70-953A-46C8-ACD9-5C1544348DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F2CA70-953A-46C8-ACD9-5C1544348DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F2CA70-953A-46C8-ACD9-5C1544348DAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

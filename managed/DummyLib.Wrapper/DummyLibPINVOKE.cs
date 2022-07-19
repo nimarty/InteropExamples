@@ -5,15 +5,14 @@ namespace DummyLib.Wrapper
 {
     public class DummyLibPINVOKE
     {
+        //Blittable Type
         [DllImport("native/DummyLib.dll")]
         public static extern float Q_rsqrt(float number);
 
+        //Non blittable Type
         [DllImport("native/DummyLib.dll")]
-        [return: MarshalAs(UnmanagedType.Bool)]
+        //[Return: MarshalAs(UnmanagedType.I1)]
         public static extern bool IsNegative(int number);
-
-        [DllImport("native/DummyLib.dll")]
-        public static extern bool ReturnFalse();
 
         //strings with unicode problematics
 

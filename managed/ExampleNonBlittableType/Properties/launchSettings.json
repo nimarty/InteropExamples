@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "ExampleBlittableType": {
+    "ExampleNonBlittableType": {
       "commandName": "Project",
       "nativeDebugging": true
     }

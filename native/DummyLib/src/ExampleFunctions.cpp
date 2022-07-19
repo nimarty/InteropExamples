@@ -23,11 +23,9 @@ float Q_rsqrt(float number)
 
 bool IsNegative(int number)
 {
-    return number < 0;
-}
-
-bool ReturnFalse()
-{
+    if (number < 0) {
+        return true;
+    }
     return false;
 }
 

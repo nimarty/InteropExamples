@@ -7,10 +7,9 @@ namespace Example1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("normalized vector: " + 1 / DummyLibPINVOKE.Q_rsqrt(144));
-            Console.WriteLine("is 5 negative: " + DummyLibPINVOKE.IsNegative(5));
-            Console.WriteLine("is -123 negative: " + DummyLibPINVOKE.IsNegative(-123));
-            Console.WriteLine("return false: " + DummyLibPINVOKE.ReturnFalse());
+            var value = 1 / DummyLibPINVOKE.Q_rsqrt(144);
+
+            Console.WriteLine($"inverse inverse sqrt(144): {value}");
         }
     }
 }
