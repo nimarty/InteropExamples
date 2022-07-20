@@ -13,6 +13,14 @@ extern "C" {
 
     __declspec(dllexport) void PrintMessageW(wchar_t* msg);
 
+    struct Point
+    {
+        double x;
+        double y;
+    };
+
+    __declspec(dllexport) void PrintPoint(Point point);
+
 #ifdef __cplusplus
 }
 #endif

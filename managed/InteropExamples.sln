@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleBlittableType", "Exa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleNonBlittableType", "ExampleNonBlittableType\ExampleNonBlittableType.csproj", "{90F2CA70-953A-46C8-ACD9-5C1544348DAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleStrings", "ExampleStrings\ExampleStrings.csproj", "{3F599180-2273-46A0-B3A7-A37E439DB689}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleStrings", "ExampleStrings\ExampleStrings.csproj", "{3F599180-2273-46A0-B3A7-A37E439DB689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleStruct", "ExampleStruct\ExampleStruct.csproj", "{8C981C8D-4848-470E-8BB3-68ADB0F8465B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3F599180-2273-46A0-B3A7-A37E439DB689}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F599180-2273-46A0-B3A7-A37E439DB689}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F599180-2273-46A0-B3A7-A37E439DB689}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C981C8D-4848-470E-8BB3-68ADB0F8465B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C981C8D-4848-470E-8BB3-68ADB0F8465B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C981C8D-4848-470E-8BB3-68ADB0F8465B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C981C8D-4848-470E-8BB3-68ADB0F8465B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

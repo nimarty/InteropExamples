@@ -6,22 +6,37 @@ namespace DummyLib.Wrapper
     public class DummyLibPINVOKE
     {
         // Blittable Type
+        // https://docs.microsoft.com/en-us/dotnet/framework/interop/blittable-and-non-blittable-types
         [DllImport("native/DummyLib.dll")]
         public static extern float Q_rsqrt(float number);
 
         // Non blittable types
+        // https://docs.microsoft.com/en-us/dotnet/framework/interop/blittable-and-non-blittable-types
         [DllImport("native/DummyLib.dll")]
         //[Return: MarshalAs(UnmanagedType.I1)]
         public static extern bool IsNegative(int number);
 
         // strings and encoding
+        // https://docs.microsoft.com/en-us/dotnet/framework/interop/default-marshalling-for-strings#strings-used-in-platform-invoke
         [DllImport("native/DummyLib.dll")]
-        public static extern void PrintMessage( /*[MarshalAs(UnmanagedType.LPUTF8Str)]*/ string msg);
+        public static extern void
+            PrintMessage( /*[MarshalAs(UnmanagedType.LPUTF8Str)]*/ string msg); //UTF = unicode transformation format
 
         [DllImport("native/DummyLib.dll" /*, CharSet = CharSet.Unicode*/)]
         public static extern void PrintMessageW(string msg);
 
-        // structs?
+        // structs
+        // https://docs.microsoft.com/en-us/dotnet/framework/interop/default-marshalling-behavior#default-marshalling-for-value-types
+        [StructLayout(LayoutKind.Sequential)]
+        public struct Point
+        {
+            // public double x;
+            public double y;
+            public int z;
+        }
+
+        [DllImport("native/DummyLib.dll")]
+        public static extern void PrintPoint(Point point);
 
         // delegates?
 

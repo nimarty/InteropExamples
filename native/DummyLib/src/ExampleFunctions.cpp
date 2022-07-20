@@ -52,6 +52,11 @@ void PrintMessageW(wchar_t* msg)
     std::cout << msgStr << std::endl;
 }
 
+void PrintPoint(Point point)
+{
+    std::cout << "X: " << point.x << " Y: " << point.y << std::endl;
+}
+
 #ifdef __cplusplus
 }
 #endif
