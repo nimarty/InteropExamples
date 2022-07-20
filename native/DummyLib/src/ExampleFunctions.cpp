@@ -3,6 +3,13 @@
 #include <codecvt>
 #include <iostream>
 
+std::string utf16WStrToUtf8Str(const std::wstring& wStr)
+{
+    using convert_type = std::codecvt_utf8_utf16<wchar_t>;
+    std::wstring_convert<convert_type, wchar_t> converter;
+    return converter.to_bytes(wStr);
+}
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -30,13 +37,6 @@ bool IsNegative(int number)
         return true;
     }
     return false;
-}
-
-std::string utf16WStrToUtf8Str(const std::wstring& wStr)
-{
-    using convert_type = std::codecvt_utf8_utf16<wchar_t>;
-    std::wstring_convert<convert_type, wchar_t> converter;
-    return converter.to_bytes(wStr);
 }
 
 void PrintMessage(char* msg)
